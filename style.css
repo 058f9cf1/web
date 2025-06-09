@@ -1,3 +1,5 @@
+/*Nav Bar*/
+
 nav {
 	color: white;
 	background-color: #1c2024 !important;
@@ -49,6 +51,8 @@ nav ul li a:hover {
 
 
 
+/*Header*/
+
 header {
 	background-color: #282828 !important;
 	text-align: center !important;
@@ -68,6 +72,56 @@ header p {
 	font-size: 1.25rem !important;
 	font-weight: 400 !important;
 	margin-bottom: 0 !important;
+}
+
+
+
+
+/*Cards*/
+ul {
+	padding: 1.5rem;
+}
+
+.cards > ul {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 1.5rem;
+}
+
+.card {
+	background-color: #282828;
+	border: 1px solid;
+	border-radius: 0.25rem;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.card a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.card img {
+	object-fit: cover;
+	height: 30rem;
+	width: 100%;
+}
+
+.card a {
+	color: white;
+	text-decoration: none;
+}
+
+.card p {
+	color:white;
+	margin-top: 0;
 }
 
 
@@ -100,54 +154,6 @@ header p {
 		right: 0;
 	}
 }
-
-.s {
-	width:90%;
-	display:grid;
-}
-
-.cards > ul {
-	list-style: none;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-	grid-column-gap: 1.5rem;
-	grid-row-gap: 1.5rem;
-	padding: 20px
-}
-
-.card {
-	border: 1px solid;
-	border-radius: 0.25rem;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-
-.card img {
-	height: 6.5rem;
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-}
-.card a::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-}
-
-.card a {
-	color: white;
-	text-decoration: none;
-}
-
-.card p {
-	color:white;
-}
-
-
 
 body, html {
     border: 0;
